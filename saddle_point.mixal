@@ -170,8 +170,7 @@ EQMAX       LD4     MAX,3
             INC4    0,6
             ST2     MAX,4
             JMP     4B
-PROCESSED   ENTA    0
-            ENT2    1
+PROCESSED   ENT2    1
             ENT3    1
             ENT5    1
             ENT6    1
@@ -205,11 +204,8 @@ PROCESSED   ENTA    0
             JMP     1B
 FOUND       ST2     RESULT(4:4)
             ST5     RESULT(5:5)
-            HLT
-NOTFOUND    STZ     RESULT
-            HLT
+NOTFOUND    HLT
 CMP         CON     0
-            ORIG    3999
 RESULT      CON     0
             END     START
 
