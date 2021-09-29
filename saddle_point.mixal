@@ -208,10 +208,3 @@ NOTFOUND    HLT
 CMP         CON     0
 RESULT      CON     0
             END     START
-
-
-
-
-
-
-
